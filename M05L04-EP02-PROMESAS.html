@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es-Cl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Tribu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">    
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+<body class="bg-light">
+
+<!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">La Tribu.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">HTML</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold border-bottom border-5 pb-2" href="#">JAVASCRIPT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://enepixeles.github.io/banco-impulso/">CSS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">NUESTRO PROPÓSITO</a></li>
+                </ul>
+            </div>
+                <a class="btn btn-nav rounded-pill px-4" href="#">Ingresar</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="academia-page pt-3 pt-lg-5 pb-5">
+        <div class="container">
+            <div class="row gx-lg-5 gy-2">
+                
+                <!-- COLUMNA IZQUIERDA (Sidebar) -->
+              
+                <!-- ASIDE: SIDEBAR RESPONSIVO Y COMPLETO -->
+                <aside class="col-lg-3 pe-lg-4 mb-0">
+                    
+                    <!-- 1. ENCABEZADO / BOTÓN TOGGLE (Visible en Móvil) -->
+                    <div class="d-flex align-items-center justify-content-between mb-3 cursor-pointer"
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#sidebarMobileContent" 
+                        aria-expanded="false"
+                        role="button">
+                        
+                        <h5 class="fw-bold mb-2">Cursos y aulas</h5>
+                        
+                        <!-- Flecha solo móvil -->
+                        <span class="d-lg-none small arrow-icon-sidebar">▼</span>
+                    </div>
+
+                    <!-- 2. CONTENIDO COLAPSABLE (Oculto en móvil, Visible en Desktop) -->
+                    <div id="sidebarMobileContent" class="collapse d-lg-block">
+                        
+                        <!-- Buscador -->
+                        <div class="input-group mb-4">
+                            <span class="input-group-text bg-light border-end-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#999" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </span>
+                            <input type="text" class="form-control bg-light border-start-0" placeholder="Buscar lección...">
+                        </div>
+
+                        <!-- Menú Principal (Árbol) -->
+                        <div class="tree-menu">
+                            
+                            <!-- Ítem Bienvenida -->
+                            <div class="menu-item mb-2">
+                                <a href="#" class="d-flex align-items-center text-decoration-none text-dark fw-bold p-2 rounded hover-bg">
+                                    
+                                    <!-- 🖼️ AQUÍ ESTÁ EL ICONO PNG -->
+                                    <!-- Ajusta 'nombre-archivo.png' por el real que tengas en tu carpeta img -->
+                                    <img src="assets/academia-enfoco/icons/menu.png" 
+                                        alt="Icono" 
+                                        width="16" 
+                                        height="16" 
+                                        class="me-2">
+                                        
+                                    Bienvenido!
+                                </a>
+                            </div>
+
+                            <!-- CATEGORÍA 1: Javascript -->
+                            <div class="menu-category">
+                                <!-- Título Categoría: Javascript -->
+                                <div class="d-flex align-items-center text-muted fw-bold mb-2 cursor-pointer p-2 rounded hover-bg" 
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target="#listaFinanciera" 
+                                    aria-expanded="true">
+                                    
+                                    <!-- 🖼️ AQUÍ ESTÁ EL ICONO PNG -->
+                                    <img src="assets/academia-enfoco/icons/tarjeta.png" 
+                                        alt="Icono Educación" 
+                                        width="16" 
+                                        height="16" 
+                                        class="me-2">
+                                        
+                                    PROGRAMACIÓN ASÍNCRONA
+                                    <span class="ms-auto small arrow-icon">▲</span>
+                                </div>
+
+                                <!-- Lista de Aulas -->
+                                <div id="listaFinanciera" class="collapse show tree-list ps-3 border-start ms-2">
+                                    
+                                    <!-- Aula 1 -->
+                                    <div class="tree-item position-relative ps-3 mb-2">
+                                        <a href="academia-enfoco-1.html" class="d-block text-muted text-decoration-none hover-text-dark">
+                                            Aula 1
+                                        </a>
+                                    </div>
+
+                                    <!-- Aula 2 -->
+                                    <div class="tree-item position-relative ps-3 mb-2">
+                                        <a href="academia-enfoco-2.html" class="d-block text-muted text-decoration-none hover-text-dark">
+                                            Aula 2
+                                        </a>
+                                    </div>
+
+                                    <!-- Aula 3 -->
+                                    <div class="tree-item position-relative ps-3 mb-2">
+                                        <a href="academia-enfoco-3.html" class="d-block text-muted text-decoration-none hover-text-dark">
+                                            Aula 3
+                                        </a>
+                                    </div>
+
+                                    <!-- M05L04-PROMESAS -->
+                                    <div class="tree-item position-relative ps-3 mb-2">
+                                        <a href="academia-enfoco-4.html" class="d-block text-primary text-decoration-none">
+                                            M05L04-PROMESAS
+                                        </a>
+                                    </div>
+
+                                    <!-- Relleno visual para que no se vea vacío -->
+                                    <div class="tree-item position-relative ps-3 mb-2">
+                                        <a href="#" class="d-block text-muted text-decoration-none hover-text-dark">Aula 5</a>
+                                    </div>
+                                    <div class="tree-item position-relative ps-3 mb-2">
+                                        <a href="#" class="d-block text-muted text-decoration-none hover-text-dark">Aula 6</a>
+                                    </div>
+                                    <div class="tree-item position-relative ps-3 mb-2">
+                                        <a href="#" class="d-block text-muted text-decoration-none hover-text-dark">Aula 7</a>
+                                    </div>
+                                    <div class="tree-item position-relative ps-3 mb-2">
+                                        <a href="#" class="d-block text-muted text-decoration-none hover-text-dark">Aula 8</a>
+                                    </div>
+                                    <div class="tree-item position-relative ps-3 mb-2">
+                                        <a href="#" class="d-block text-muted text-decoration-none hover-text-dark">Aula 9</a>
+                                    </div>
+                                    <div class="tree-item position-relative ps-3 mb-2">
+                                        <a href="#" class="d-block text-muted text-decoration-none hover-text-dark">Aula 10</a>
+                                    </div>
+                                    <div class="tree-item position-relative ps-3 mb-2">
+                                        <a href="#" class="d-block text-muted text-decoration-none hover-text-dark">Aula 11</a>
+                                    </div>
+                                    <div class="tree-item position-relative ps-3 mb-2">
+                                        <a href="#" class="d-block text-muted text-decoration-none hover-text-dark">Aula 12</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CATEGORÍA 2: Grupos de Ayuda -->
+                            <div class="menu-category mt-3">
+                                <!-- Título Categoría: Grupos de Ayuda -->
+                                <div class="d-flex align-items-center text-muted fw-bold mb-2 cursor-pointer p-2 rounded hover-bg" 
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target="#listaGrupos" 
+                                    aria-expanded="false">
+                                    
+                                    <!-- 🖼️ AQUÍ ESTÁ EL ICONO PNG -->
+                                    <!-- Asegúrate de tener 'whatsapp-icon.png' en tu carpeta img -->
+                                    <img src="assets/academia-enfoco/icons/whatsapp.png" 
+                                        alt="Icono WhatsApp" 
+                                        width="16" 
+                                        height="16" 
+                                        class="me-2">
+                                        
+                                    Grupos de Ayuda
+                                    <span class="ms-auto small arrow-icon">▼</span>
+                                </div>
+
+                                <div id="listaGrupos" class="collapse tree-list ps-3 border-start ms-2">
+                                    <div class="tree-item position-relative ps-3 mb-2">
+                                        <a href="#" class="d-block text-muted text-decoration-none small">Introducción al equipo</a>
+                                    </div>
+                                    <div class="tree-item position-relative ps-3 mb-2">
+                                        <a href="#" class="d-block text-muted text-decoration-none small">Metas 2025</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> <!-- Fin tree-menu -->
+
+                    </div> <!-- Fin sidebarMobileContent -->
+                </aside>
+
+
+                <!-- COLUMNA DERECHA (Contenido) -->
+                <section class="col-lg-8 mt-0">
+
+                <!-- REPRODUCTOR DE VIDEO (CON LA BARRA INTERACTIVA) -->
+                <div class="video-player shadow-sm mb-3">
+                    <!-- 1. Imagen de portada -->
+                    <img src="assets/academia-enfoco/educacion-financiera/aula-04/portada-video-1920.jpg" alt="Portada" class="video-player__thumb">
+                    
+                    <!-- 2. 🏷️ EL LOGO DE LA TRIBU (Ahora como hermano de la imagen) -->
+                    <img src="img/LOGO-LA-TRIBU-01.png" alt="Logo La Tribu" class="video-player__logo">
+
+                    <!-- 3. Motor de audio (Una sola vez) -->
+                    <audio id="audioPodcast" src="assets/academia-enfoco/M05L04-03-AUDIO.m4a"></audio>
+
+                    <!-- 4. OVERLAY CENTRAL -->
+                    <div class="video-player__overlay" id="mainPlayOverlay">
+                        <svg id="v-mainIconPlay" class="video-player__main-icon" viewBox="0 0 16 16">
+                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                        </svg>
+                        <svg id="v-mainIconPause" class="video-player__main-icon d-none" viewBox="0 0 16 16">
+                            <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/>
+                        </svg>
+                    </div>
+
+                    <div class="video-player__controls">
+                        <div class="d-flex align-items-center w-100 gap-3">
+                            <button class="video-player__btn" id="btnVideoPlay">
+                                <svg id="v-iconPlay" width="20" height="20" fill="white" viewBox="0 0 16 16"><path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/></svg>
+                                <svg id="v-iconPause" class="d-none" width="20" height="20" fill="white" viewBox="0 0 16 16"><path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/></svg>
+                            </button>
+
+                            <span class="video-player__time" id="v-currentTime">00:00</span>
+
+                            <!-- 👇 AQUÍ VA EL CAMBIO CLAVE 👇 -->
+                            <div class="video-player__progress" id="v-progressBar" style="cursor: pointer;">
+                                <div class="video-player__progress-fill" id="v-progressFill"></div>
+                            </div>
+                            <!-- 👆 AQUÍ TERMINA EL CAMBIO 👆 -->
+
+                            <span class="video-player__time" id="v-duration">00:00</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- 🧭 BREADCRUMB CON ID DINÁMICO -->
+                <nav class="breadcrumb-custom mb-2">
+                    <span id="breadcrumb-lesson">...</span>
+                </nav>
+
+                <!-- CONTROLES EXCLUSIVOS PARA MÓVIL (Se ven solo en pantallas chicas) -->
+                <div class="mobile-audio-bar d-flex d-lg-none align-items-center justify-content-around py-3 mb-4 shadow-sm">
+                    
+                    <!-- 1. Velocidad -->
+                    <button id="btnSpeed" class="mobile-audio-bar__btn mobile-audio-bar__btn--text">1x</button>
+
+                    <!-- 2. Retroceder 15s -->
+                    <button id="btnBack15" class="mobile-audio-bar__btn">
+                        <img src="assets/academia-enfoco/icons/back15.svg" alt="Atrás 15">
+                    </button>
+
+                    <!-- 3. Play/Pausa (El círculo negro) -->
+                    <button id="btnMobilePlay" class="mobile-audio-bar__btn mobile-audio-bar__btn--main">
+                        <!-- Uso los mismos SVG que el reproductor grande para que sean iguales -->
+                        <svg id="m-iconPlay" viewBox="0 0 16 16" width="24" height="24" fill="white">
+                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                        </svg>
+                        <svg id="m-iconPause" class="d-none" viewBox="0 0 16 16" width="24" height="24" fill="white">
+                            <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"/>
+                        </svg>
+                    </button>
+
+                    <!-- 4. Adelantar 15s -->
+                    <button id="btnForward15" class="mobile-audio-bar__btn">
+                        <img src="assets/academia-enfoco/icons/forward15.svg" alt="Adelante 15">
+                    </button>
+
+                    <!-- 5. Reiniciar -->
+                    <button id="btnRestart" class="mobile-audio-bar__btn">
+                        <img src="assets/academia-enfoco/icons/restart.svg" alt="Reiniciar">
+                    </button>
+
+                </div>
+
+                    <!-- TÍTULO PRINCIPAL -->
+<h2 class="fw-bold mb-3">El mundo asíncrono en JavaScript</h2>
+
+
+<div class="card p-4 shadow-sm mb-4 glow-border">
+    <p class="text-secondary">
+        Para que veas cómo corren estas promesas, abre la consola del navegador en tu computador (aprieta F12). Un ejercicio con Mario como ejemplo se merece una entrega con cariño.
+    </p>
+    <hr>
+    <div class="d-grid gap-2 text-center">
+        <p class="small text-muted">
+            He programado los tres ejercicios para que se ejecuten en orden. Primero verás la carga de Mario, luego la validación de la hora y finalmente el proceso pesado.
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- SUBTÍTULO -->
+<h5 class="fw-bold mt-5 mb-3">Que tu aplicación no se “congele” nunca más</h5>
+
+<!-- PÁRRAFO INTRODUCTORIO -->
+<p class="text-muted mb-4">
+    ¡Qué bueno que estés aquí! En JavaScript es muy importante entender que el programa no puede quedarse esperando.
+    La asincronía permite que tu aplicación siga funcionando mientras una tarea pesada se ejecuta en segundo plano.
+</p>
+
+
+<!-- CÁPSULA AMARILLA -->
+<div class="info-capsule shadow-sm">
+    <h5 class="info-capsule__title">Tres ideas clave sobre asincronía</h5>
+    
+    <ul class="info-capsule__list">
+        <li class="info-capsule__item">
+            <img src="assets/academia-enfoco/icons/check.png" class="info-capsule__icon-check">
+            <span><strong>JavaScript tiene un solo hilo:</strong> Si lo bloqueas, bloqueas toda la aplicación.</span>
+        </li>
+
+        <li class="info-capsule__item">
+            <img src="assets/academia-enfoco/icons/check.png" alt="check" class="info-capsule__icon-check">
+            <span><strong>Lo asíncrono no detiene el programa:</strong> Permite que el usuario siga interactuando mientras algo carga.</span>
+        </li>
+
+        <li class="info-capsule__item">
+            <img src="assets/academia-enfoco/icons/check.png" alt="check" class="info-capsule__icon-check">
+            <span><strong>Promesas y async/await:</strong> Son herramientas para manejar tareas que ocurren en el futuro.</span>
+        </li>
+    </ul>
+
+    <!-- Icono flotante -->
+    <div class="info-capsule__edit-floating">
+        <img src="assets/academia-enfoco/icons/pencil.png" alt="editar">
+    </div>
+</div>
+
+
+<!-- CÁPSULA MORADA -->
+<div class="info-capsule info-capsule--morado shadow-sm">
+    <h5 class="info-capsule__title">Ejercicio práctico sobre asincronía</h5>
+    
+    <p class="info-capsule__text">
+        Crea una promesa que simule pedir datos a un servidor. 
+        Haz que después de 2 segundos se resuelva con un mensaje.
+        Luego muestra el resultado usando <strong>.then()</strong>.
+        Después intenta provocar un error y captúralo con <strong>.catch()</strong>.
+    </p>
+
+    <span class="info-capsule__footer-text">M05L04-PROMESAS, Javascript.</span>
+
+    <div class="info-capsule__edit-floating">
+        <img src="assets/academia-enfoco/icons/academia-blanco.png" alt="ejercicio">
+    </div>
+</div>
+      
+                    
+ <!-- ACORDEÓN PREGUNTAS FRECUENTES -->
+                    <div class="mt-5">
+                        <div class="accordion custom-accordion" id="accordionPreguntasClase4">
+                            
+                            <!-- Ítem 1: Callbacks -->
+                            <div class="accordion-item mb-3 border-0 shadow-sm rounded-4 overflow-hidden">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne4">
+                                        ¿Qué es realmente un callback en palabras simples?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne4" class="accordion-collapse collapse" data-bs-parent="#accordionPreguntasClase4">
+                                    <div class="accordion-body text-muted">
+                                        Es como dejarle un recado a un amigo: le pides que haga un trámite y le das tu número para que te llame apenas termine. En el código, un callback es una función que le pasas a otra para que se ejecute solo cuando la tarea principal esté lista.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Ítem 2: Promesas -->
+                            <div class="accordion-item mb-3 border-0 shadow-sm rounded-4 overflow-hidden">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo4">
+                                        ¿Por qué se dice que las Promesas son más limpias que los Callbacks?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo4" class="accordion-collapse collapse" data-bs-parent="#accordionPreguntasClase4">
+                                    <div class="accordion-body text-muted">
+                                        Porque evitan que el código se ponga muy enredado cuando tenemos muchas tareas seguidas. Las promesas nos permiten separar claramente el camino del éxito con el bloque then y los errores con el bloque catch, haciendo que todo sea más fácil de leer y mantener.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Ítem 3: Async/Await -->
+                            <div class="accordion-item mb-3 border-0 shadow-sm rounded-4 overflow-hidden">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree4">
+                                        ¿Cuál es la gran ventaja de usar Async y Await?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree4" class="accordion-collapse collapse" data-bs-parent="#accordionPreguntasClase4">
+                                    <div class="accordion-body text-muted">
+                                        La mayor ventaja es la legibilidad. Hace que el código asíncrono se vea y se escriba casi igual a una lista de instrucciones normal. Esto ayuda mucho a evitar errores lógicos y permite usar estructuras tradicionales como try-catch para atrapar problemas de forma elegante.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- CUESTIONARIO CON BARRA DE PROGRESO Y CONTENEDORES -->
+                    <div id="quizModule" class="mt-5 card border-0 shadow-sm p-4 p-md-5 rounded-4">
+                        
+                        <!-- Parte superior: Título y Barra -->
+                        <div class="mb-4">
+                            <h4 class="fw-bold mb-1">Ejercitemos</h4>
+                            <small class="text-muted">No hay respuestas buenas ni malas. Esto es solo práctica.</small>
+                            
+                            <div class="progress-container mt-3">
+                                <div id="progressBar" class="progress-container__bar"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Aquí el JS pone la pregunta -->
+                        <p id="quizQuestion" class="fs-5 mt-4 mb-4">Cargando pregunta...</p>
+
+                        <!-- AQUÍ EL JS PONE LAS OPCIONES (A, B, C...) -->
+                        <!-- ¡Asegúrate de que esta línea exista! -->
+                        <div id="quizOptions" class="d-grid gap-3 mb-4"></div>
+
+                        <!-- Sección de la Pista -->
+                        <!-- SECCIÓN DE LA PISTA REFORMULADA -->
+                        <div class="quiz-hint mt-3">
+                            <a class="quiz-hint__trigger" data-bs-toggle="collapse" href="#hintContent" role="button" aria-expanded="false">
+                                <!-- Icono SVG de la ampolleta -->
+                                <img src="assets/academia-enfoco/icons/ampolleta-idea.svg" alt="Pista" class="quiz-hint__icon">
+                                <span class="quiz-hint__text">¿Quieres una pista?</span>
+                            </a>
+                            
+                            <div class="collapse" id="hintContent">
+                                <div class="quiz-hint__content mt-2">
+                                    <small id="hintText" class="text-muted">Cargando pista...</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Botón Siguiente -->
+                        <div class="text-end">
+                            <button id="btnNextQuestion" class="btn btn-nav rounded-pill px-4" disabled>Siguiente</button>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-5 mt-5 border-top">
+        <div class="container d-md-flex justify-content-between align-items-center">
+            <div class="mb-3 mb-md-0">
+                <h4 class="fw-bold">hablemos@latribu.cl</h4>
+                <p class="small text-muted mb-0">Mi casa, Puente Alto</p>
+                <p class="small text-muted">© 2025 Andrés Díaz / Enepixeles. Fotos por Gemini y Freepick.</p>
+            </div>
+            <div class="text-md-end">
+                <h4 class="fw-bold">(+569) 4556 0196</h4>
+                <p class="small text-muted mb-0">Lunes - Viernes 9:00 AM - 18:00 PM</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/cuestionario.js"></script>
+    <script src="./js/app-M05L04.js"></script>   
+</body>
+</html>
